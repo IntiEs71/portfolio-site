@@ -1,124 +1,392 @@
 <!DOCTYPE html>
-<html lang="en"> 
-    <head> 
-        <title> Inti's Resume Site </title>
-        <meta charset="utf-8">
-        <meta name="viewport" 
-        content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link rel="stylesheet" href="style.css">
+<html lang="en">
 
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-    <body class="is-preload">
-        <div id="page-wrap">
-            <img src="profile.png" alt="portrait" id="pic" />
+    <title>Inti's Site</title>
+
+    <!-- Bootsrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Custom fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+    rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+    rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+
+    <!-- style css -->
+    <link href="css/style.css" rel="stylesheet" id="theme-link"/>
+    <!-- script -->
+    <script src="js/script.js"></script>
+
+</head>
+
+<body id="page-top">
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         
-            <div id="contact-info" class="vcard">   
-                <!-- Microformats! -->
-                <h1 class="fn">Inti Espejo Guillen</h1>
-                <p>
-                    Mobile: <span class="tel">(571) 358-0469</span><br />
-                    Email: <a class="email" href="mailto:inti@vt.edu">inti@vt.edu</a> <br>
-                    <a href="IntiEspejo_Resume.pdf" target="_blank">View Resume</a>
-
-                </p>
-            </div>
-                    
-            <div id="objective">
-                <p>
-                    I am a rising senior at Virginia Tech pursuing a Bachelor's of Science in Computer Science.
-                      My goal is to further develop my programming skills and secure working experience through an internship 
-                    for the Fall of 2022.
-                </p>
-            </div>
+        
+        
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
             
-            <div class="clear"></div>
-            
-            <dl>
-                <dd class="clear"></dd>
-                
-                <dt>Education</dt>
-                <dd>
-                    <h2>Virginia Tech - Blacksburg, VA</h2>
-                    <p><strong>Major:</strong> Computer Science <br/>
-                    <strong>Expected Graduation:</strong> May 2023 <br />
-                </dd>
-                
-                <dd class="clear"></dd>
-                
-                <dt>Skills</dt>
-                <dd>
-                    <h4>Languages</h4>
-                    <p>Java, Python, SQL, JavaScript, C, C++, Kotlin, HTML, CSS </p>
-                    
-                    <h4>Technologies</h4>
-                    <p>Git, Linux, Jira, Jenkins, Figma, Eclipse, VSCode
-                    </p>
-                    <h4>Frameworks</h4>
-                    <p>React, JUnit, Express </p>
-                </dd>
-                
-                <dd class="clear"></dd>
+            <span class="d-block d-lg-none">Inti Espejo</span>
+            <span class="d-none d-lg-block">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="linkedin.png" alt="" />
+            </span>
+        </a>
 
-                <dt>Experience</dt>
-                <dd>
-                    <h2> Software Engineer Intern <span> Jun 2022 - Aug 2022</span> </h2>
-                    <h4> <i> Raytheon Technologies </i> </h4>
-                    <ul>
-                        <li>Developed solutions to reported issues regarding 
-                            Command & Control Java applications in an active
-                             Agile environment </li>
-                        <li>
-                            Conducted JUnit tests for written code and participated in code reviews
-                        </li>
-                    </ul> 
+        
 
-                    <h2> Software Engineer Intern <span> May 2021 - Aug 2021</span> </h2>
-                    <h4> <i> Ruby Embroidery & Printing </i> </h4>
-                    <ul>
-                        <li>Created features of a CRM application in Python that serves as a contact database that keeps track of their client's information and important files related to their previous orders </li>
-                        <li> Developed GUI for application using Tkinter and worked in team </li>
-                    </ul>
 
-                </dd>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <dd class="clear"></dd>
-                <dt>Projects</dt>
-                <dd>
-                    <h2>Effect of COVID 19 on Stock Market (Python) <span>Mar 2022 - May 2022 </span></h2>
-                    <ul>
-                        <li>Scraped Stock Market and COVID 19 data to perform an analysis on both data sets to conclude a
-                            correlation using data visualization tools and libraries such as numpy, matplotlib, and pandas
-                        </li>
-                    </ul> 
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div> 
 
-                    <h2>Home Mortgage Calculator (Kotlin) <span>Sep 2021 - Nov 2021</span></h2>
-                    <ul>
-                        <li>Developed and adapted wireframes made in Figma into a fully fledged mobile application</li>
-                        <li>Applied MVC design pattern to create an Android mobile application that accepts user input
-                            regarding house mortgage, loan rate, and loan period to provide the user with their amortization schedule
-                        </li>
-                    </ul>
-                    
-                    <h2>Profit Calculator for Stock Options (Java) <span>May 2021 - Aug 2021</span></h2>
-                    <ul>
-                        <li>Developed a Java application that takes user input for a selected option to calculate and display a
-                            graphical representation of a table showing possible profits and losses
-                        </li>
-                        <li>Conducted JUnit testing to ensure proper quality and functionality of implemented features
-                        </li>
-                    </ul> 
-
-                </dd>                
-                
-                <dd class="clear"></dd>
-                <dd class="clear"></dd>
-            </dl>
-            <div class="clear"></div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger px-2" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger px-2" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger px-2" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger px-2" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger px-2" href="#skills">Skills</a>
+                </li>
+            </ul>
         </div>
+    </nav>
 
-        <a href="https://www.linkedin.com/in/inti-espejo" target="_blank" class="button">LinkedIn</a>
+    <div class="container-fluid p-0">
+        
+        <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+            <div class="my-auto">
+                
+                <h1 class="mb-0">
+                    Inti 
+                    <span class="text-primary">Espejo</span>
+                </h1>
+                
 
-    </body>
+                <div class="subheading mb-5">
+                    Centreville, Virginia <br>
+                    <a href="mailto:inti@vt.edu">inti@vt.edu</a>
+                </div>
+
+                <p class="mb-5">
+                    I am a Senior at Virginia Tech pursuing a Bachelor of Science in Computer Science with experience in web development.
+                    I am seeking new grad opportunities for Spring 2023 to further apply my skills and continue learning in a professional setting.
+                </p>
+        
+                <a href="IntiEspejo-Resume.pdf" target="_blank">View Resume as PDF</a>
+                <br />
+                
+            </div>
+        </section>
+
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+            <div class="my-auto">
+                <h2 class="mb-5">Experience</h2>
+
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <h3 class="mb-0">Software Developer Intern</h3>
+                        <div class="subheading mb-3">Maximus</div>
+                        <ul>
+                        <li>
+                            Contributed to the development of full-stack web applications using Angular, JavaScript, TypeScript, HTML, and CSS to deliver high-quality user experiences
+                        </li>
+                        <li>
+                            Utilized HTTP requests to communicate with a Java backend that used the Spring Framework
+
+                        </li>
+                        <li>
+                            Developed Java-based REST APIs and controllers for seamless integration with Angular front-end
+                        </li>
+                        <li>
+                            Enhanced error message handling by implementing caching techniques to improve performance and reduce server load, delivering a faster and more reliable web application
+                        </li>
+                        <li>
+                            Practiced version control using Git, ensuring proper documentation and efficient code collaboration with others
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">November 2022 - Present</span>
+                    </div>
+                </div>
+
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <h3 class="mb-0">Software Engineer Intern</h3>
+                        <div class="subheading mb-3">Raytheon Technologies</div>
+                        <ul>
+                            <li>
+                                Developed and maintained features for a Java-based command and control application
+                            </li>
+                            <li>
+                                Utilized Jira to track reported bugs and implement solutions to address issues in a timely manner
+                            </li>
+                            <li>
+                                Conducted extensive unit testing using JUnit and Jacoco to validate the functionality of software components, ensuring high-quality code
+                            </li>
+                            <li>
+                                Participated in code reviews using Crucible, identifying code defects and providing constructive feedback to enhance overall code quality and maintainability
+                            </li>
+                            <li>
+                                Collaborated in an agile development environment with daily stand-up meetings and retrospective meetings to ensure project progress
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">June 2022 - August 2022</span>
+                    </div>
+                </div>
+
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <h3 class="mb-0">Software Engineering Intern</h3>
+                        <div class="subheading mb-3">Ruby Embroidery & Printing</div>
+                        <ul>
+                        <li>
+                            Developed a CRM application that includes features of adding clients with specified information, search, and removal
+                        </li>
+                        <li>
+                            Created GUI for the application using Tkinter
+                        </li>
+                        <li>
+                            Utilized pytest to create test cases and ensure the application's 
+                            functionality was maintained during development
+                        </li>
+                        <li>
+                            Worked in a team to develop features in an active agile environment
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">May 2021 - August 2021</span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+            <div class="my-auto">
+                <h2 class="mb-5">Education</h2>
+                <div class="resume-item d-flex flex-column flex-md-row">
+                    <div class="resume-content mr-auto">
+                        <h3 class="mb-0">Bachelor of Science</h3>
+                        <div class="subheading mb-3">Virginia Tech | Blacksburg, VA</div>
+                        <div>Major: Computer Science</div>
+                    
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary"> Expected Graduation: May 2023</span>
+                    </div>
+
+                    <br>
+                    
+                    <div class="subheading mb-3">Relavent Coursework:</div>
+                    <li>
+                        Data Structures and Algorithms
+                    </li>
+                    <li>
+                        Software Engineering Capstone
+                    </li>
+                    <li>
+                        Computer Systems
+                    </li>
+                    <li>
+                        Computer Organization
+                    </li>
+                    <li>
+                        Data and Algorithm Analysis
+                    </li>
+                    <li>
+                        Human Computer Interaction
+                    </li>
+                    <li>
+                        Software Design and Engineering
+                    </li>
+                    <li>
+                        Data Analytics and Visualization
+                    </li>
+                    <li>
+                    Artificial Intelligence
+                    </li>
+                </div>
+            </div>
+        </section>
+
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+            <div class="my-auto">
+                <h2 class="mb-5">Projects</h2>
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <h3 class="mb-0">Goal Tracker </h3>
+                        <div class="subheading mb-3">
+                            Technologies(s) Used: MongoDB, Python, Flask, Angular, JavaScript, HTML, CSS 
+                        </div>
+                        <li>
+                            Developed a web application using Python’s Flask framework for the backend and Angular for the frontend
+                        </li>
+                        <li>
+                            Implemented MongoDB as the database to store user data and track progress towards goals
+                        </li>
+                        <li>Enabled users to create new goals, set deadlines, and track progress, with the ability to view their progress
+                            towards goals over time
+                        </li>
+                        <li>
+                            Created REST API endpoints in the backend to allow users to create, update, and delete goals
+                        </li>
+                        <li>
+                            Designed a service in the frontend to handle the API endpoints and manage user interactions with the platform
+                        </li>
+                        <li>
+                            Implemented basic data analytics to track milestones, time spent, and overall success rate
+                        </li>
+                    </div>
+                </div>
+                
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <h3 class="mb-0">Home Mortgage Calculator </h3>
+                        <div class="subheading mb-3"> Language(s) Used: Kotlin, Java </div>
+                        <li>
+                            Designed the UI for an Android app using Figma, creating wireframes and a prototype to guide development
+                        </li>
+                        <li>
+                            Developed the app using Kotlin and Java, implementing features such as data input for mortgage loan information, calculation of monthly payments, and display of an amortization schedule
+                        </li>
+                        <li>
+                            Utilized the Model-View-Controller (MVC) design pattern to organize the app’s logic, user interface, and data models for easier maintenance and scalability                        </li>
+                        <li>
+                            Utilized version control systems such as Git to track and collaborate on code changes
+                        </li>
+                    </div>        
+                </div>
+                
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <h3 class="mb-0">Effect of COVID 19 on Stock Market </h3>
+                        <div class="subheading mb-3"> Language(s) Used: Python </div>
+                        <li>
+                            Conducted a project to analyze the correlation between the stock market and COVID-19 using data visualization tools and libraries such as numpy, matplotlib, and pandas
+                        </li>
+                        <li>
+                            Scraped stock market and COVID-19 data from various sources using web scraping techniques
+                        </li>
+                        <li>
+                            Analyzed and cleaned the data using numpy and pandas to prepare it for visualization
+                        </li>
+                        <li>
+                            Created a report following the QAC (Question-Analysis-Conclusion) format in Jupyter Notebook to present the findings of the analysis
+                        </li>
+                    </div>        
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+            <div class="my-auto">
+                <h2 class="mb-5">Skills</h2>
+
+                <div class="subheading mb-3">Programming Languages</div>
+                <ul class="list-inline">
+                    <li class="list-inline-item">Java</li>
+                    <li class="list-inline-item">Python</li>
+                    <li class="list-inline-item">JavaScript</li>
+                    <li class="list-inline-item">C</li>
+                    <li class="list-inline-item">C++</li>
+                    <li class="list-inline-item">Kotlin</li>
+                    <li class="list-inline-item">SQL</li>
+                    <li class="list-inline-item">HTML</li>
+                    <li class="list-inline-item">CSS</li>
+                </ul>
+
+                <div class="subheading mb-3">Frameworks</div>
+                <ul class="list-inline">
+
+
+                    <li class="list-inline-item">Angular</li>
+                    <li class="list-inline-item">React</li>
+                    <li class="list-inline-item">Flask</li>
+                    <li class="list-inline-item">Spring</li>
+                    <li class="list-inline-item">Express</li>
+                    <li class="list-inline-item">Node.js</li>
+                    <li class="list-inline-item">JUnit</li>
+                    <li class="list-inline-item">pytest</li>
+
+                </ul>
+
+                <div class="subheading mb-3">Technologies</div>
+                <ul class="list-inline">
+                    <li class="list-inline-item">MongoDB</li>
+                    <li class="list-inline-item">Git</li>
+                    <li class="list-inline-item">Docker</li>
+                    <li class="list-inline-item">Maven</li>
+                    <li class="list-inline-item">Linux</li>
+                    <li class="list-inline-item">Postman</li>
+
+                    <li class="list-inline-item">Crucible</li>
+                    <li class="list-inline-item">Jira</li>
+
+                    <li class="list-inline-item">Figma</li>
+
+                    <li class="list-inline-item">Eclipse</li>
+                    <li class="list-inline-item">IntelliJ</li>
+                    <li class="list-inline-item">Visual Studio Code</li>
+                    <li class="list-inline-item">Android Studio</li>
+
+                    <li class="list-inline-item">PyCharm</li>
+                    <li class="list-inline-item">Jupyter Notebook</li>
+
+                    <li class="list-inline-item">UML Modeling Tools (Lucidchart, draw.io)</li>
+                </ul>
+
+                <div class="subheading mb-3">Concepts</div>
+                <ul class="list-inline">
+                    <li class="list-inline-item">RESTful APIs</li>
+                    <li class="list-inline-item">Object Oriented Programming</li>
+                    <li class="list-inline-item">Software Development Methodologies (Agile, Scrum, Waterfall)</li>
+                    <li class="list-inline-item">MVC Architecture</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+
+</body>
+
 </html>
-
