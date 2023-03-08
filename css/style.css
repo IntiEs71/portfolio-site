@@ -1,0 +1,183 @@
+body {
+    font-family: 'Open Sans', serif;
+    padding-top: 4px;
+    color: #383c41;
+    background: #fff;
+  }
+  #sideNav {
+   color: rgba(255, 255, 255, 0.2);
+  }
+
+  .d-block {
+    padding-left: 15px;
+  }
+  
+  @media (min-width: 992px) {
+    body {
+      padding-top: 0;
+      padding-left: 17rem;
+    }
+  }
+
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: rgb(150, 42, 51);
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: rgb(207, 49, 62);
+  width: 0%;
+}
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Saira Extra Condensed', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #343a40;
+  }
+  
+  h1 {
+    font-size: 6rem;
+    line-height: 5.5rem;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+    color: rgb(128,0,0);
+  }
+  
+  .subheading {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Saira Extra Condensed', serif;
+    font-size: 1.35rem;
+    color: rgb(207, 49, 62);
+  }
+  
+  .list-social-icons a {
+    color: #495057;
+  }
+  
+  .list-social-icons a:hover {
+    color: rgb(128,0,0);
+  }
+  
+  .list-social-icons a .fa-lg {
+    font-size: 1.75rem;
+  }
+  
+  .list-icons {
+    font-size: 3rem;
+  }
+  
+  .list-icons .list-inline-item i:hover {
+    color: rgb(128,0,0);
+  }
+  
+  #sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  @media (min-width: 992px) {
+    #sideNav {
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      width: 17rem;
+      height: 100vh;
+    }
+    #sideNav .navbar-brand {
+      display: flex;
+      margin: auto auto 0;
+      padding: 0.5rem;
+    }
+    #sideNav .navbar-brand .img-profile {
+      max-width: 10rem;
+      max-height: 10rem;
+      border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    }
+    #sideNav .navbar-collapse {
+      display: flex;
+      align-items: flex-start;
+      flex-grow: 0;
+      width: 100%;
+      margin-bottom: auto;
+    }
+
+    #sideNav .navbar-collapse .navbar-nav {
+      flex-direction: column;
+      width: 100%;
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item {
+      display: block;
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+      display: block;
+    }
+  }
+  
+  section.resume-section {
+    border-bottom: 1px solid #dee2e6;
+    padding-top: 5rem !important;
+    padding-bottom: 1rem !important;
+  }
+  
+  section.resume-section .resume-item .resume-date {
+    min-width: none;
+  }
+  
+  @media (min-width: 768px) {
+    section.resume-section {
+      min-height: 100vh;
+    }
+    section.resume-section .resume-item .resume-date {
+      min-width: 18rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    section.resume-section {
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+    }
+  }
+  
+  .bg-primary {
+    background-color: rgb(99,0,49)!important;
+  }
+  
+  .text-primary {
+    color: rgb(99, 0, 49)!important;
+    
+  }
+  
+  a {
+    color: rgb(128,0,0);
+  }
+  
+  a:hover, a:focus, a:active {
+    color: rgb(128,0,0);
+  }
